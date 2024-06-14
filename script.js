@@ -72,7 +72,7 @@ const evaluateExpression = () => {
     expressionOutput.textContent = display.value
     try {
         const sanitizedInput = display.value.replace(/,/g, '')
-        const result = eval(sanitizedInput)
+        const result = math.evaluate(sanitizedInput)
         display.value = result.toLocaleString()
         isEvaluationSuccessful = true
     } catch (error) {

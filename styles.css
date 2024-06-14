@@ -22,7 +22,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100svh;
+    height: 100vh;
     font-family: var(--font);
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .calculator {
-    width: 300px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
@@ -210,4 +210,30 @@ a:focus {
 
 a:visited {
     color: var(--blue-main);
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        height: 100svh;
+    }
+
+    .container {
+        width: 340px;
+    }
+
+    .box {
+        height: 70px;
+    }
+
+    .equal {
+        height: 100%;
+    }
+
+    footer {
+        font-size: 1.125rem;
+    }
+
+    footer .container {
+        padding: 24px;
+    }
 }
