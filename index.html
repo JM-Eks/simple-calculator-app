@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/calculator.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <div class="display">
+                    <p class="expression"></p>
+                    <input name="display" id="display" readonly>
+                </div>
+                <div class="box">
+                    <button class="system-control clear-display">C</button>
+                </div>
+                <div class="box">
+                    <button class="system-control delete">DEL</button>
+                </div>
+                <div class="box">
+                    <button class="operators math-btn" data-value="/">/</button>
+                </div>
+                <div class="box">
+                    <button class="operators math-btn" data-value="*">x</button>
+                </div>
+                <div class="box">
+                    <button class="numbers math-btn" data-value="7">7</button>
+                </div>
+                <div class="box">
+                    <button class="numbers math-btn" data-value="8">8</button>
+                </div>
+                <div class="box">
+                    <button class="numbers math-btn" data-value="9">9</button>
+                </div>
+                <div class="box">
+                    <button class="operators math-btn" data-value="-">-</button>
+                </div>
+                <div class="box">
+                    <button class="numbers math-btn" data-value="4">4</button>
+                </div>
+                <div class="box">
+                    <button class="numbers math-btn" data-value="5">5</button>
+                </div>
+                <div class="box">
+                    <button class="numbers math-btn" data-value="6">6</button>
+                </div>
+                <div class="box">
+                    <button class="operators math-btn" data-value="+">+</button>
+                </div>
+                <div class="box">
+                    <button class="numbers math-btn" data-value="1">1</button>
+                </div>
+                <div class="box">
+                    <button class="numbers math-btn" data-value="2">2</button>
+                </div>
+                <div class="box">
+                    <button class="numbers math-btn" data-value="3">3</button>
+                </div>
+                <div class="box equal">
+                    <button class="operators evaluate" data-value="=">=</button>
+                </div>
+                <div class="box zero">
+                    <button class="numbers math-btn" data-value="0">0</button>
+                </div>
+                <div class="box">
+                    <button class="operators math-btn" data-value=".">.</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Built by <a href="https://x.com/jerrilyonhigh" target="_blank">Eks</a></p>
+        </div>
+    </footer>
+    
+
+   <script src="script.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.2/math.js"></script>
+</body>
+</html>

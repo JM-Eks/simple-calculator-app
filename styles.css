@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-main: #0b13d4;
+    --blue-secondary: #3d43f3;
+    --blue-light-1: #dbdbff;
+    --blue-light-2: #b0b0fd;
+    --red-main: #bb0101;
+    --red-light-1: #ffebeb;
+    --red-light-2: #ffcbcb;
+    --black: #2a2a2a;
+    --gray: #838383;
+    --gray-light: #f9f9f9;
+    --font: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    font-family: var(--font);
+}
+
+.container {
+    width: 300px;
+    margin: auto;
+}
+
+.calculator {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 30px 20px 20px;
+    margin-top: 30px;
+    border: 1px solid var(--gray);
+}
+
+.display {
+    grid-column: span 4;
+    margin-bottom: 15px;
+    border: 1px solid var(--gray);
+}
+
+.expression {
+    width: 100%;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 8px;
+    text-align: right;
+    color: #6a6a6a;
+    background-color: var(--gray-light);
+}
+
+input {
+    width: 100%;
+    height: 65px;
+    font-family: var(--font);
+    font-size: 1.6rem;
+    color: var(--blue-main);
+    background-color: var(--gray-light);
+    text-align: right;
+    padding: 0 8px;
+    border: none;
+    cursor: default;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: 2px solid var(--black);
+}
+
+.box {
+    width: 100%;
+    height: 60px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+}
+
+button:active{
+    transition: 2ms;
+}
+
+.system-control {
+    border: 1px solid var(--red-main);
+    background-color: var(--red-light-1);
+    color: var(--red-main);
+}
+
+.system-control:hover {
+    background-color: var(--red-light-2);
+}
+
+.system-control:focus {
+    background-color: var(--red-light-2);
+}
+
+.system-control:active {
+    background-color: var(--red-light-1);
+}
+
+.disabled {
+    border: 1px solid var(--gray);
+    background-color: #ffffff;
+    color: var(--gray);
+    cursor: default;
+}
+
+.disabled:hover {
+    background-color: inherit;
+}
+
+.operators {
+    border: 1px solid var(--blue-main);
+    background-color: var(--blue-light-1);
+    color: var(--blue-main);
+}
+
+.operators:hover {
+    background-color: var(--blue-light-2);
+}
+
+.operators:focus {
+    background-color: var(--blue-light-2);
+}
+
+.operators:active {
+    background-color: var(--blue-light-1);
+}
+
+.numbers {
+    border: 1px solid var(--blue-main);
+    background-color: var(--blue-main);
+    color: #ffffff;
+}
+
+.numbers:hover {
+    background-color: var(--blue-secondary);
+}
+
+.numbers:focus {
+    background-color: var(--blue-secondary);
+}
+
+.numbers:active {
+    background-color: var(--blue-main);
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.equal {
+    grid-row: span 2;
+    height: 100%;
+}
+
+.equal button {
+    height: 100%;
+}
+
+footer {
+    margin-top: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+footer .container {
+    padding: 16px;
+    border-top: 1px solid var(--gray);
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--blue-main);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid var(--black);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--blue-main);
+}
