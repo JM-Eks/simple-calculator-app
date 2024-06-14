@@ -1,0 +1,2 @@
+# About the project
+On my journey to becoming a design engineer, this calculator app marks my first real build. The goal was to build a fully functional and dynamic application that would enable me practice and improve my HTML, CSS, and JavaScript skills, as well as use a JavaScript library, in this case, Math.js. The calculator app solves very simple maths expressions involving addition, subtraction, multiplication, and division.
