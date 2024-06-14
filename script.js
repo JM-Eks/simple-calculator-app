@@ -99,6 +99,7 @@ const updateButtonStates = () => {
     }
 }
 
+// Convert long result values to exponents
 const checkAndConvertToExponential = () => {
     if (display.value.replace(/,/g, '').length >= 16) {
         display.value = parseFloat(display.value.replace(/,/g, '')).toExponential()
