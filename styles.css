@@ -111,7 +111,7 @@ button:active{
     background-color: var(--red-light-2);
 }
 
-.system-control:focus {
+.system-control:focus-visible {
     background-color: var(--red-light-2);
 }
 
@@ -140,7 +140,7 @@ button:active{
     background-color: var(--blue-light-2);
 }
 
-.operators:focus {
+.operators:focus-visible {
     background-color: var(--blue-light-2);
 }
 
@@ -158,7 +158,7 @@ button:active{
     background-color: var(--blue-secondary);
 }
 
-.numbers:focus {
+.numbers:focus-visible {
     background-color: var(--blue-secondary);
 }
 
